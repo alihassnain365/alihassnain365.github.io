@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haytham Labs | AI Research</title>
+    <style>
+        /* THEME SETTINGS */
+        :root {
+            --bg-color: #0a0a0a;       /* Deep Black */
+            --text-color: #e0e0e0;     /* Off-White */
+            --accent-color: #00ff41;   /* Terminal Green */
+            --secondary-color: #888;   /* Grey for details */
+            --font-main: 'Courier New', Courier, monospace; /* Code Font */
+        }
+
+        /* RESET & LAYOUT */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: var(--font-main);
+            line-height: 1.6;
+            padding: 2rem;
+            max-width: 800px;
+            margin: 0 auto; /* Centers the content */
+        }
+
+        /* HEADER */
+        header {
+            margin-bottom: 4rem;
+            border-bottom: 1px solid #333;
+            padding-bottom: 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            letter-spacing: -1px;
+        }
+        
+        .status {
+            font-size: 0.8rem;
+            color: var(--accent-color);
+            border: 1px solid var(--accent-color);
+            padding: 2px 8px;
+            border-radius: 4px;
+        }
+
+        /* HERO SECTION */
+        .hero {
+            margin-bottom: 5rem;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            font-weight: normal;
+        }
+
+        .subtitle {
+            color: var(--secondary-color);
+            font-size: 1.1rem;
+            max-width: 600px;
+        }
+
+        /* PROJECTS GRID */
+        .section-title {
+            text-transform: uppercase;
+            font-size: 0.8rem;
+            color: var(--secondary-color);
+            margin-bottom: 1.5rem;
+            letter-spacing: 2px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+            margin-bottom: 5rem;
+        }
+
+        @media(min-width: 600px) {
+            .grid { grid-template-columns: 1fr 1fr; }
+        }
+
+        .card {
+            border: 1px solid #333;
+            padding: 1.5rem;
+            transition: all 0.3s ease;
+        }
+
+        .card:hover {
+            border-color: var(--text-color);
+            transform: translateY(-2px);
+        }
+
+        .card h3 {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .card p {
+            color: var(--secondary-color);
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+        }
+
+        .tag {
+            display: inline-block;
+            font-size: 0.7rem;
+            background: #222;
+            padding: 2px 6px;
+            margin-right: 5px;
+        }
+
+        /* FOOTER */
+        footer {
+            border-top: 1px solid #333;
+            padding-top: 2rem;
+            font-size: 0.8rem;
+            color: var(--secondary-color);
+            display: flex;
+            justify-content: space-between;
+        }
+
+        a { color: var(--text-color); text-decoration: none; }
+        a:hover { text-decoration: underline; }
+
+        /* BLINKING CURSOR ANIMATION */
+        .cursor {
+            display: inline-block;
+            width: 10px;
+            height: 1.5rem;
+            background-color: var(--accent-color);
+            animation: blink 1s infinite;
+            vertical-align: middle;
+        }
+
+        @keyframes blink {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">HAYTHAM LABS</div>
+        <div class="status">OPERATIONAL</div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Building the Eyes of Agriculture.<span class="cursor"></span></h1>
+            <p class="subtitle">
+                We build proprietary datasets and computer vision models to solve food security challenges in the Indus Valley.
+            </p>
+        </section>
+
+        <section>
+            <div class="section-title">Active Research</div>
+            <div class="grid">
+                
+                <div class="card">
+                    <h3>Project Indus Rust</h3>
+                    <p>High-resolution object detection dataset for Wheat Rust (Yellow/Brown) in the Punjab region.</p>
+                    <div>
+                        <span class="tag">COMPUTER VISION</span>
+                        <span class="tag">AGRITECH</span>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3>Project Roman Urdu</h3>
+                    <p>Sentiment analysis corpus for Roman Urdu text, targeting customer feedback automation.</p>
+                    <div>
+                        <span class="tag">NLP</span>
+                        <span class="tag">LLM</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div>&copy; 2026 Haytham Labs. All systems normal.</div>
+        <div>
+            <a href="mailto:contact@haythamlabs.com">Contact</a>
+        </div>
+    </footer>
+
+</body>
+</html>
